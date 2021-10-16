@@ -60,6 +60,10 @@ func main() {
 		fmt.Println("User Age: " + strconv.Itoa(users.Users[i].Age))
 		fmt.Println("User Name: " + users.Users[i].Name)
 		fmt.Println("Facebook Url: " + users.Users[i].Social.Facebook)
+		
+		json.Unmarshal(byteValue, &users)
+		
+	
 	}
 
 }
